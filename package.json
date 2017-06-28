@@ -19,8 +19,9 @@
     }
   },
   "scripts": {
-    "dev":"webpack-dev-server",
-    "build:dev": "webpack",
+    "dev":"webpack-dev-server --env.dev",
+    "build": "webpack -p --env.prod", 
+    "build:dev": "webpack --env.dev",
     "validate": "npm run lint",
     "start": "http-server --silent -c-1",
     "lint": "eslint ."

@@ -35,4 +35,14 @@ npm install webpack-dev-server --save-dev
 
 add dev to script
 
-and try npm run dev, now you dont need npm run build:dev and npm run start
+and try npm run dev, now you dont need  npm run start
+
+
+Minify
+
+webpack -p enables prod mode 
+
+devtool:'eval',
+add devtool for chorme debug, for prod use source-maps
+
+development vs prod
